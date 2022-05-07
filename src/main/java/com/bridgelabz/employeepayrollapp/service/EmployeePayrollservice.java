@@ -19,10 +19,10 @@ public class EmployeePayrollservice implements IEmployeePayrollService {
 
     @Override
     public Employee editEmp(Employee employee) {
-       if(employeeRepository.findById(employee.getId()).isPresent()){
-           return employeeRepository.save(employee);
-       }
-       return null;
+        if (employeeRepository.findById(employee.getId()).isPresent()) {
+            return employeeRepository.save(employee);
+        }
+        return null;
     }
 
 
