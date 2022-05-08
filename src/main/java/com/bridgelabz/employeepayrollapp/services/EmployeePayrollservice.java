@@ -51,41 +51,42 @@ public class EmployeePayrollservice implements IEmployeePayrollService {
         return employee;
     }
 
+
+    private List<EmployeePayrollData> employeePayrollDataList = new ArrayList<>();
     /**
      * service class for employee payroll data
      * @return
      */
     @Override
     public List<EmployeePayrollData> getEmployeePayrollData() {
-        List<EmployeePayrollData> employeePayrollDataList = new ArrayList<>();
-        employeePayrollDataList.add(new EmployeePayrollData(1,new EmployeePayrollDTO("pankaj",4000)));
         return employeePayrollDataList;
     }
 
     @Override
     public EmployeePayrollData getEmployeePayrollDataById(int empId) {
-        EmployeePayrollData employeePayrollData = null;
-        employeePayrollData = new EmployeePayrollData(empId, new EmployeePayrollDTO("pankaj", 3000));
-        return employeePayrollData;
+        return employeePayrollDataList.get(empId-1);//as arraylist index is starts from 0
     }
 
     @Override
     public EmployeePayrollData createEmployeePayrollData(EmployeePayrollDTO employeePayrollDTO) {
         EmployeePayrollData employeePayrollData = null;
-        employeePayrollData = new EmployeePayrollData(1, employeePayrollDTO);
+        //employeePayrollDataList.size()+1 because size will be 0 initially
+        employeePayrollData = new EmployeePayrollData(employeePayrollDataList.size()+1, employeePayrollDTO);
+        employeePayrollDataList.add(employeePayrollData);//adds in employee list
         return employeePayrollData;
     }
 
     @Override
     public EmployeePayrollData updateEmployeePayrollData(int empId, EmployeePayrollDTO employeePayrollDTO) {
-        EmployeePayrollData employeePayrollData = null;
-        employeePayrollData = new EmployeePayrollData(empId, employeePayrollDTO);
+        EmployeePayrollData employeePayrollData = this.getEmployeePayrollDataById(empId);
+        employeePayrollData.setName(employeePayrollDTO.name);
+        employeePayrollData.setSalary(employeePayrollDTO.salary);
+        employeePayrollDataList.set(empId-1,employeePayrollData);
         return employeePayrollData;
     }
 
     @Override
     public void deleteEmployeePayrollData(int empId) {
-        EmployeePayrollData employeePayrollData = null;
-        employeePayrollData = new EmployeePayrollData(empId,new EmployeePayrollDTO("pankaj",5000));
+        employeePayrollDataList.remove(empId-1);
     }
 }
