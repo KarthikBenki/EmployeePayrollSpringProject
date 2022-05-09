@@ -23,3 +23,21 @@
 2022-05-09 14:07:00.861  WARN 6264 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2022-05-09 14:07:01.682  INFO 6264 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 5.989 seconds (JVM running for 7.562)
 2022-05-09 14:07:01.686  INFO 6264 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Employee payroll app started
+2022-05-09 15:02:02.274  INFO 11608 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 11.0.14 on DESKTOP-S0OIGJA with PID 11608 (D:\TW CFP\spring\EmployeePayrollApp\employeepayrollapp\target\classes started by karth in D:\TW CFP\spring\EmployeePayrollApp\employeepayrollapp)
+2022-05-09 15:02:02.277 DEBUG 11608 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-05-09 15:02:02.282  INFO 11608 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : The following 1 profile is active: "dev"
+2022-05-09 15:02:06.735  WARN 11608 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-09 15:02:07.256  INFO 11608 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 5.96 seconds (JVM running for 8.126)
+2022-05-09 15:02:07.260  INFO 11608 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Employee payroll app started
+2022-05-09 15:05:32.728  INFO 6028 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 11.0.14 on DESKTOP-S0OIGJA with PID 6028 (D:\TW CFP\spring\EmployeePayrollApp\employeepayrollapp\target\classes started by karth in D:\TW CFP\spring\EmployeePayrollApp\employeepayrollapp)
+2022-05-09 15:05:32.731 DEBUG 6028 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-05-09 15:05:32.732  INFO 6028 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : The following 1 profile is active: "dev"
+2022-05-09 15:05:36.977  WARN 6028 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-09 15:05:37.434  INFO 6028 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 5.36 seconds (JVM running for 6.899)
+2022-05-09 15:05:37.438  INFO 6028 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Employee payroll app started
+2022-05-09 15:24:23.185  INFO 17036 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 11.0.14 on DESKTOP-S0OIGJA with PID 17036 (D:\TW CFP\spring\EmployeePayrollApp\employeepayrollapp\target\classes started by karth in D:\TW CFP\spring\EmployeePayrollApp\employeepayrollapp)
+2022-05-09 15:24:23.190 DEBUG 17036 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-05-09 15:24:23.191  INFO 17036 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : The following 1 profile is active: "dev"
+2022-05-09 15:24:28.211  WARN 17036 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-09 15:24:28.790  INFO 17036 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 6.4 seconds (JVM running for 8.525)
+2022-05-09 15:24:28.795  INFO 17036 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Employee payroll app started
