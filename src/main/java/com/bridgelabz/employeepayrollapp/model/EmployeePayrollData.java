@@ -28,7 +28,7 @@ public class EmployeePayrollData {
     private String note;
     @Column(name = "profile_pic")
     private String profilePic;
-    @ElementCollection
+    @ElementCollection//1 to many relation ship
     @CollectionTable(name = "employee_department",
                      joinColumns = @JoinColumn(name = "id"))
     @Column(name = "department")
@@ -38,10 +38,10 @@ public class EmployeePayrollData {
     public EmployeePayrollData(){}
 
     public EmployeePayrollData( EmployeePayrollDTO employeePayrollDTO){
-       this.updateEmployeePayrollDTO(employeePayrollDTO);
+       this.updateEmployeePayrollData(employeePayrollDTO);
     }
 
-    private void updateEmployeePayrollDTO(EmployeePayrollDTO employeePayrollDTO) {
+     public void updateEmployeePayrollData(EmployeePayrollDTO employeePayrollDTO) {
         this.name=employeePayrollDTO.name;
         this.salary=employeePayrollDTO.salary;
         this.gender=employeePayrollDTO.gender;
@@ -50,4 +50,5 @@ public class EmployeePayrollData {
         this.profilePic=employeePayrollDTO.profilePic;
         this.departments=employeePayrollDTO.departments;
     }
+
 }
